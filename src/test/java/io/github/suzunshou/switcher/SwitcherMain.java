@@ -10,8 +10,8 @@ public class SwitcherMain {
                 .keyValueSplit("=")
                 .enforceDisconnectOfNullBytesCount(2)
                 .build();
-        NioServer nioServer = new NioServer(configutation);
-        nioServer.start();
+        SwitchServer switchServer = new SwitchServer(configutation);
+        switchServer.start();
         checkValue();
     }
 

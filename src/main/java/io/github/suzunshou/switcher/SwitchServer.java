@@ -17,12 +17,12 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class NioServer extends Thread {
+public class SwitchServer extends Thread {
     Selector selector;
     Configutation configutation;
     ConcurrentHashMap<SocketChannel, Integer> channelToCountMap = new ConcurrentHashMap<>();
 
-    public NioServer(Configutation configutation) {
+    public SwitchServer(Configutation configutation) {
         this.configutation = configutation;
     }
 
